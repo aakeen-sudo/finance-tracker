@@ -29,7 +29,7 @@ export function filterRecords(records, re) {
 }
 
 export function sortRecords(records, sortBy) {
-  const list = [...reords];
+    const list = [...records];
   if (sortBy === 'date-asc') list.sort((a, b) => a.date.localeCompare(b.date));
   if (sortBy === 'date-desc') list.sort((a, b) => b.date.localeCompare(a.date));
   if (sortBy === 'date-asc') list.sort((a, b) => a.description.localeCompare(b.description));

@@ -25,9 +25,8 @@ function resetForm() {
   $('form-title').textContent = 'Add a record';
   for (const field in checks) showError(field, '');
 }
-function resetForm() {
 
-
+for (const field in checks) {
   $(field).addEventListener('input', () => showError(field, checks[field]($(field).value)));
 }
 

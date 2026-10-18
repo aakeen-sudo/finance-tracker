@@ -1,4 +1,4 @@
-import { loadRecords, SaveRecords, loadSettings, saveSettings } from './storage.js';
+import { loadRecords, saveRecords, loadSettings, saveSettings } from './storage.js';
 
 const defaultsettings = {
     base: 'RWF',
