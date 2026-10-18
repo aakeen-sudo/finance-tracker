@@ -14,7 +14,7 @@ export function getTopCategory(records) {
     let top = 'None';
     let best = 0;
     for (const name in totals) {
-        if (totals[name] > basst) {
+            if (totals[name] > best) {
             best = totals[name];
             top = name;
         }

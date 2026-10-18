@@ -172,7 +172,8 @@ $('seed-button').addEventListener('click', async () => {
   try {
     const response = await fetch('seed.json');
     loadData(await response.json());
-  } catch {
+    } catch (error) {
+    console.error(error);
     $('data-status').textContent = 'Could not load the sample data.';
   }
 });
