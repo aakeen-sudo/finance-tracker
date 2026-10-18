@@ -5,13 +5,15 @@ export function loadRecords() {
     try {
         const data = JSON.parse(localStorage.getItem(RECORDS_KEY) || '[]');
         return Array.isArray(data) ? data : [];
+
     } catch {
+
         return [];
     }
 }
 
 export function saveRecords(records) {
-    localStorage.setItem(RECORDS_KEY, JSON.stringify(records));
+    localStorage.setItem(RECODS_KEY, JSON.stringify(records));
 }
 
 export function loadSettings() {
@@ -21,6 +23,7 @@ export function loadSettings() {
         return null;
     }
 }
+
 
 export function saveSettings(settings) {
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));

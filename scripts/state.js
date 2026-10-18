@@ -16,19 +16,19 @@ export const state = {
 
 export function convertToBase(amount, code) {
     const other = state.settings.others.find((c) => c.code === code);
-    returns other ? amount * other .rate : amount;
+    return other ? amount * other.rate : amount;
 }
 
-export function addRecord(feilds) {
+export function addRecord(fields) {
     const now = new Date().toISOString();
-    state.records.push({ id: 'txn_' + Date.now(), ...feilds, createdAt: now, updatedAt:
+    state.records.push({ id: 'txn_' + Date.now(), ...fields, createdAt: now, updatedAt: now });
         saveRecords(state.records);
  }
 
- export function updateRecord(id, feilds) {
+ export function updateRecord(id, fields) {
     const record = state.records.find((r) => r.id === id);
     if (!record) return;
-    Object.assign(record, feilds, {updatedAt: new Date().toISOString() });
+    Object.assign(record, fields, {updatedAt: new Date().toISOString() });
     saveRecords(state.records);
  }
 

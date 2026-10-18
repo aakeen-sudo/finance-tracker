@@ -26,7 +26,6 @@
     <main id="main">
         <section id="view-dashboard" aria-labelledby="dashboard-title">
             <h2 id="dashboard-title">Dashboard</h2>
-            
             <div class="stats-grid">
                 <div class="stat-card">
                     <p class="stat-label">Total records</p>
@@ -41,15 +40,13 @@
                     <p class="stat-value" id="stat-top">None</p>
                 </div>
             </div>
-            
             <h3>Last 7 days</h3>
             <div class="chart" id="chart"></div>
-            
             <p id="cap-message" class="cap-message" aria-live="polite"></p>
         </section>
-        <section id=""view-records" aria-labelledby="records-title">
+        
+        <section id="view-records" aria-labelledby="records-title">
             <h2 id="records-title">Records</h2>
-            
             <div class="search-bar">
                 <label for="search-input">Search with regex</label>
                 <input type="text" id="search-input" placeholder="Example: coffee|tea">
@@ -59,7 +56,6 @@
                 </label>
                 <p id="search-error" class="error" role="status"></p>
             </div>
-            
             <div class="sort-bar">
                 <label for="sort-select">Sort by</label>
                 <select id="sort-select">
@@ -71,7 +67,6 @@
                     <option value="amount-asc">Amount, low to high</option>
                 </select>
             </div>
-            
             <table class="records-table">
                 <thead>
                     <tr>
@@ -84,32 +79,27 @@
                 </thead>
                 <tbody id="records-body"></tbody>
             </table>
-            
             <p id="empty-message" class="empty" hidden>No records yet. Use the Add link to create one.</p>
         </section>
-        <section id=""view-form" aria-labelledby="form-title">
+        
+        <section id="view-form" aria-labelledby="form-title">
             <h2 id="form-title">Add a record</h2>
-            
             <form id="record-form" novalidate>
                 <input type="hidden" id="record-id">
-                
                 <div class="field">
                     <label for="description">Description</label>
                     <input type="text" id="description" aria-describedby="description-error">
                     <p id="description-error" class="error" role="status"></p>
                 </div>
-                
                 <div class="field">
                     <label for="amount">Amount</label>
                     <input type="text" id="amount" inputmode="decimal" aria-describedby="amount-error">
                     <p id="amount-error" class="error" role="status"></p>
                 </div>
-                
                 <div class="field">
                     <label for="currency">Currency</label>
                     <select id="currency"></select>
                 </div>
-                
                 <div class="field">
                     <label for="category">Category</label>
                     <input type="text" id="category" list="category-list" aria-describedby="category-error">
@@ -123,34 +113,29 @@
                                             </datalist>
                                             <p id="category-error" class="error" role="status"></p>
                                         </div>
-                                        
                                         <div class="field">
                                             <label for="date">Date</label>
                                             <input type="text" id="date" placeholder="YYYY-MM-DD" aria-describedby="date-error">
                                             <p id="date-error" class="error" role="status"></p>
                                         </div>
-                                        
                                         <div class="form-buttons">
                                             <button type="submit" id="save-button">Save record</button>
                                             <button type="button" id="cancel-button">Cancel</button>
                                         </div>
-                                        
                                         <p id="form-status" class="status" role="status"></p>
                                     </form>
                                 </section>
-                                <section id=""view-settings" aria-labelledby="settings-title">
+                                
+                                <section id="view-settings" aria-labelledby="settings-title">
                                     <h2 id="settings-title">Settings</h2>
-                                    
                                     <form id="settings-form" novalidate>
                                         <fieldset>
                                             <legend>Currencies</legend>
-                                            
                                             <div class="field">
                                                 <label for="base-code">Base currency</label>
                                                 <input type="text" id="base-code" maxlength="3" aria-describedby="base-error">
                                                 <p id="base-error" class="error" role="status"></p>
                                             </div>
-                                            
                                             <div class="field">
                                                 <label for="other1-code">Second currency</label>
                                                 <input type="text" id="other1-code" maxlength="3">
@@ -158,7 +143,6 @@
                                                 <input type="text" id="other1-rate" inputmode="decimal" aria-describedby="other1-error">
                                                 <p id="other1-error" class="error" role="status"></p>
                                             </div>
-                                            
                                             <div class="field">
                                                 <label for="other2-code">Third currency</label>
                                                 <input type="text" id="other2-code" maxlength="3">
@@ -167,17 +151,14 @@
                                                 <p id="other2-error" class="error" role="status"></p>
                                             </div>
                                         </fieldset>
-                                        
                                         <div class="field">
                                             <label for="cap">Spending cap (leave empty for no cap)</label>
                                             <input type="text" id="cap" inputmode="decimal" aria-describedby="cap-error">
                                             <p id="cap-error" class="error" role="status"></p>
                                         </div>
-                                        
                                         <button type="submit">Save settings</button>
                                         <p id="settings-status" class="status" role="status"></p>
                                     </form>
-                                    
                                     <h3>Your data</h3>
                                     <div class="data-buttons">
                                         <button type="button" id="export-button">Export JSON</button>
@@ -194,9 +175,10 @@
                                     <p>GitHub: <a href="https://github.com/aakeen-sudo">aakeen-sudo</a></p>
                                     <p>Email: <a href="mailto:a.akeen@alustudent.com">a.akeen@alustudent.com</a></p>
                                 </section>
-  </main>
-  <footer class="site-footer">
-    <p>Student Finance Tracker. Built with HTML, CSS and JavaScript.</p>
-  </footer>
-</body>
-</html>
+                            </main>
+                            
+                            <footer class="site-footer">
+                                <p>Student Finance Tracker. Built with HTML, CSS and JavaScript.</p>
+                            </footer>
+                        </body>
+                        </html>
