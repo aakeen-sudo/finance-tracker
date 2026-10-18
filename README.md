@@ -4,7 +4,7 @@ A simple app for students to track spending, set a budget cap, and search their 
 
 Live site: https://aakeen-sudo.github.io/finance-tracker/
 Repo: https://github.com/aakeen-sudo/finance-tracker
-Demo video: ADD YOUR UNLISTED VIDEO LINK HERE
+Demo video: https://youtu.be/V0GRCtBNMdM
 
 ## Theme
 Student Finance Tracker
