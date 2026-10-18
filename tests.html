@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tests</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main id="main">
+    <section>
+      <h1>Validator tests</h1>
+      <p id="summary" role="status"></p>
+      <ul id="results"></ul>
+    </section>
+  </main>
+  <script type="module">
+    import { checkDescription, checkAmount, checkCategory, checkDate, checkRate, checkImport } from './scripts/validators.js';
+    import { compileRegex } from './scripts/search.js';
+
+    const results = document.getElementById('results');
+    let passed = 0;
+    let total = 0;
+
+    function test(name, condition) {
+      total++;
+      if (condition) passed++;
+      const item = document.createElement('li');
+      item.textContent = (condition ? 'Pass: ' : 'Fail: ') + name;
+      results.appendChild(item);
+    }
+
+    test('normal description passes', checkDescription('Lunch at cafeteria') === '');
+    test('space at the start fails', checkDescription(' Lunch') !== '');
+    test('double space fails', checkDescription('Lunch  out') !== '');
+    test('repeated word fails', checkDescription('the the book') !== '');
+    test('12.50 passes', checkAmount('12.50') === '');
+    test('012 fails', checkAmount('012') !== '');
+    test('12.555 fails', checkAmount('12.555') !== '');
+    test('Fast-food passes', checkCategory('Fast-food') === '');
+    test('Food! fails', checkCategory('Food!') !== '');
+    test('2026-10-18 passes', checkDate('2026-10-18') === '');
+    test('2026-13-01 fails', checkDate('2026-13-01') !== '');
+    test('rate 0 fails', checkRate('0') !== '');
+    test('rate 0.0007 passes', checkRate('0.0007') === '');
+    test('import refuses something that is not a list', checkImport({}) !== '');
+    test('broken regex returns null', compileRegex('(abc', false) === null);
+
+    document.getElementById('summary').textContent = passed + ' of ' + total + ' tests passed.';
+  </script>
+</body>
+</html>
