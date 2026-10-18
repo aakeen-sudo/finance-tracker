@@ -1,0 +1,13 @@
+[
+  { "id": "txn_1", "description": "Lunch at cafeteria", "amount": 2500, "currency": "RWF", "category": "Food", "date": "2026-10-18", "createdAt": "2026-10-18T12:00:00.000Z", "updatedAt": "2026-10-18T12:00:00.000Z" },
+  { "id": "txn_2", "description": "Chemistry textbook", "amount": 89.99, "currency": "USD", "category": "Books", "date": "2026-10-17", "createdAt": "2026-10-17T09:00:00.000Z", "updatedAt": "2026-10-17T09:00:00.000Z" },
+  { "id": "txn_3", "description": "Bus pass for October", "amount": 15000, "currency": "RWF", "category": "Transport", "date": "2026-10-16", "createdAt": "2026-10-16T08:00:00.000Z", "updatedAt": "2026-10-16T08:00:00.000Z" },
+  { "id": "txn_4", "description": "Coffee with friends", "amount": 3.5, "currency": "EUR", "category": "Entertainment", "date": "2026-10-15", "createdAt": "2026-10-15T16:00:00.000Z", "updatedAt": "2026-10-15T16:00:00.000Z" },
+  { "id": "txn_5", "description": "Tuition fee for semester two", "amount": 1250000, "currency": "RWF", "category": "Fees", "date": "2026-10-14", "createdAt": "2026-10-14T10:00:00.000Z", "updatedAt": "2026-10-14T10:00:00.000Z" },
+  { "id": "txn_6", "description": "Tea & biscuits <snack>", "amount": 0.01, "currency": "USD", "category": "Food", "date": "2026-10-13", "createdAt": "2026-10-13T15:00:00.000Z", "updatedAt": "2026-10-13T15:00:00.000Z" },
+  { "id": "txn_7", "description": "Phone airtime top-up", "amount": 1000, "currency": "RWF", "category": "Other", "date": "2026-10-12", "createdAt": "2026-10-12T19:00:00.000Z", "updatedAt": "2026-10-12T19:00:00.000Z" },
+  { "id": "txn_8", "description": "Leap day movie ticket", "amount": 4000, "currency": "RWF", "category": "Entertainment", "date": "2024-02-29", "createdAt": "2024-02-29T20:00:00.000Z", "updatedAt": "2024-02-29T20:00:00.000Z" },
+  { "id": "txn_9", "description": "New Year taxi ride", "amount": 0, "currency": "RWF", "category": "Transport", "date": "2026-01-01", "createdAt": "2026-01-01T00:30:00.000Z", "updatedAt": "2026-01-01T00:30:00.000Z" },
+  { "id": "txn_10", "description": "Library late fee (overdue)", "amount": 500, "currency": "RWF", "category": "Fees", "date": "2025-12-31", "createdAt": "2025-12-31T17:00:00.000Z", "updatedAt": "2025-12-31T17:00:00.000Z" },
+  { "id": "txn_11", "description": "Second-hand laptop charger", "amount": 25.5, "currency": "EUR", "category": "Other", "date": "2026-09-30", "createdAt": "2026-09-30T11:00:00.000Z", "updatedAt": "2026-09-30T11:00:00.000Z" }
+]
