@@ -2,7 +2,7 @@
   "reportVersion": "1.0",
   "assignmentId": "assignment-1792345630776-gfreakh",
   "assignmentName": "Summative-Building Responsible UI",
-  "generatedAt": 1792354636476,
+  "generatedAt": 1792357778339,
   "metrics": {
     "assignmentId": "assignment-1792345630776-gfreakh",
     "authorship": {
@@ -3230,7 +3230,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792354154888,
-        "lastReviewedAt": 1792354626613,
+        "lastReviewedAt": 1792357198580,
         "totalReviewTime": 14028,
         "language": "javascript",
         "modificationCount": 2,
@@ -3287,7 +3287,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792350774776,
-        "lastReviewedAt": 1792354626613,
+        "lastReviewedAt": 1792357198577,
         "totalReviewTime": 476796,
         "language": "json",
         "modificationCount": 4,
@@ -3344,7 +3344,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792351665617,
-        "lastReviewedAt": 1792354626613,
+        "lastReviewedAt": 1792357198579,
         "totalReviewTime": 91026,
         "language": "ignore",
         "modificationCount": 2,
@@ -3373,7 +3373,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792351014216,
-        "lastReviewedAt": 1792354626613,
+        "lastReviewedAt": 1792357198578,
         "totalReviewTime": 449276,
         "language": "html",
         "modificationCount": 2,
@@ -3430,7 +3430,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792347329883,
-        "lastReviewedAt": 1792354626612,
+        "lastReviewedAt": 1792357198574,
         "totalReviewTime": 1699477,
         "language": "javascript",
         "modificationCount": 2,
@@ -3459,7 +3459,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792345681461,
-        "lastReviewedAt": 1792354626612,
+        "lastReviewedAt": 1792357198573,
         "totalReviewTime": 1574631,
         "language": "javascript",
         "modificationCount": 2,
@@ -3568,9 +3568,9 @@
   ],
   "studentIdentifier": "a.akeen@alustudent.com",
   "repoUrl": "https://github.com/aakeen-sudo/finance-tracker",
-  "repoHeadCommit": "28f838499afc0267b75d5db1160fa4c9988edb5a",
+  "repoHeadCommit": "c51e0e7aa640dfec4d78c468984b222a97dfbe0b",
   "integrity": {
     "algorithm": "sha256",
-    "hash": "2936c78f6f4bc30ce4062371863b2e041c29cec599d38eb7b1d7a3dc5c0ac45f"
+    "hash": "068fc06aec25df8da01d8afbc5c7062208e5692be8af3e92eaa28e3cac9873a6"
   }
 }
